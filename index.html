@@ -1,0 +1,431 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aura Aesthetics | Nurse Carly</title>
+<meta name="description" content="Bespoke aesthetic treatments in Weymouth, Dorset. Discover Aura Aesthetics by Nurse Carly.">
+<style>
+:root {
+  --pink: #f5e7e5;
+  --cream: #fcf9f5;
+  --gold: #ad8755;
+  --ink: #40352f;
+  --muted: #776a61;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--ink);
+  font-family: Arial, sans-serif;
+  line-height: 1.7;
+}
+h1, h2, h3 {
+  font-family: Georgia, serif;
+  font-weight: 400;
+  line-height: 1.2;
+}
+h1 { font-size: clamp(3rem, 8vw, 6rem); }
+h2 { font-size: clamp(2rem, 5vw, 3.3rem); }
+a { color: inherit; }
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 7%;
+  background: var(--cream);
+  border-bottom: 1px solid #e8dcd2;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+.logo {
+  color: var(--gold);
+  font: 32px Georgia, serif;
+  letter-spacing: 8px;
+  text-decoration: none;
+}
+nav { display: flex; gap: 22px; flex-wrap: wrap; }
+nav a {
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.btn {
+  display: inline-block;
+  padding: 13px 25px;
+  border: 1px solid var(--gold);
+  border-radius: 30px;
+  background: var(--pink);
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 12px;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+.hero {
+  min-height: 520px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: var(--pink);
+}
+.hero-copy {
+  padding: 70px 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.eyebrow {
+  color: var(--gold);
+  font-size: 11px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+.hero h1 { margin: 15px 0 0; }
+.script {
+  color: var(--gold);
+  font: italic 38px Georgia, serif;
+}
+.hero-photo {
+  min-height: 380px;
+  background:
+    linear-gradient(#00000008,#00000008),
+    url("https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=1200&q=85")
+    center/cover;
+}
+section { padding: 75px 7%; }
+.center { text-align: center; }
+.section-intro {
+  max-width: 620px;
+  margin: 0 auto 35px;
+  color: var(--muted);
+}
+.gold-line {
+  width: 55px;
+  border: 0;
+  border-top: 1px solid var(--gold);
+  margin: 20px auto;
+}
+.treatments {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 18px;
+}
+.treatment {
+  border: 1px solid #eaded4;
+  padding: 28px 22px;
+  text-align: center;
+  background: white;
+}
+.treatment h3 { font-size: 23px; }
+.price {
+  color: var(--gold);
+  font: 24px Georgia, serif;
+}
+.about {
+  background: #f4e6e3;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+.about-panel {
+  background: var(--cream);
+  padding: 35px;
+}
+ul { padding-left: 20px; }
+.faq {
+  max-width: 800px;
+  margin: auto;
+  text-align: left;
+}
+details {
+  border-bottom: 1px solid #e5d7cb;
+  padding: 18px 0;
+}
+summary { cursor: pointer; }
+form {
+  max-width: 620px;
+  margin: auto;
+  text-align: left;
+}
+label {
+  display: block;
+  margin: 15px 0 5px;
+  font-size: 13px;
+}
+input, select, textarea {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #d9c9ba;
+  background: white;
+  color: var(--ink);
+  font: inherit;
+  border-radius: 4px;
+}
+footer {
+  background: #f2e4e2;
+  padding: 40px 7%;
+  text-align: center;
+}
+footer a { color: var(--gold); }
+@media(max-width:700px) {
+  header { flex-direction: column; gap: 15px; }
+  nav { justify-content: center; gap: 13px; }
+  .hero, .about { grid-template-columns: 1fr; }
+  .hero-copy { padding: 55px 8%; }
+  .hero-photo { min-height: 300px; }
+  .treatments { grid-template-columns: 1fr; }
+  section { padding: 55px 7%; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <a class="logo" href="#">AURA</a>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#treatments">Treatments</a>
+    <a href="#prices">Prices</a>
+    <a href="#faq">FAQs</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <a class="btn" href="#booking">BOOK NOW</a>
+</header>
+
+<main>
+<section class="hero">
+  <div class="hero-copy">
+    <div class="eyebrow">Refine · Enhance · Rejuvenate</div>
+    <h1>Aura</h1>
+    <div class="script">Aesthetics</div>
+    <p>Bespoke aesthetic treatments<br>by Nurse Carly</p>
+    <p>Weymouth, Dorset</p>
+    <a class="btn" href="#booking">BOOK YOUR CONSULTATION →</a>
+  </div>
+  <div class="hero-photo" role="img"
+       aria-label="Beauty and skincare editorial photograph"></div>
+</section>
+
+<section id="about" class="about">
+  <div>
+    <div class="eyebrow">Welcome to Aura</div>
+    <h2>Confidence looks good on you.</h2>
+    <p>
+      At Aura Aesthetics, our aim is to enhance your natural
+      beauty with a personalised approach to aesthetic care.
+    </p>
+    <p>
+      Every treatment journey begins with a consultation
+      to discuss your goals and suitability.
+    </p>
+    <p><em>By Nurse Carly</em></p>
+  </div>
+  <div class="about-panel">
+    <h3>Our philosophy</h3>
+    <p>Personalised care. Thoughtful treatments.
+       A focus on natural-looking results.</p>
+    <p>Based in Weymouth, Dorset.</p>
+  </div>
+</section>
+
+<section id="treatments" class="center">
+  <div class="eyebrow">Discover Aura</div>
+  <h2>Our Treatments</h2>
+  <p class="section-intro">
+    Explore our treatment options. A consultation is
+    required to determine suitability.
+  </p>
+  <div class="treatments">
+    <article class="treatment">
+      <h3>Lip Filler</h3>
+      <p>Enhance your natural beauty.</p>
+      <a href="#prices">View prices →</a>
+    </article>
+    <article class="treatment">
+      <h3>Anti-Wrinkle</h3>
+      <p>A personalised treatment approach.</p>
+      <a href="#prices">View prices →</a>
+    </article>
+    <article class="treatment">
+      <h3>Skin Boosters</h3>
+      <p>Skin-focused aesthetic treatments.</p>
+      <a href="#prices">View prices →</a>
+    </article>
+    <article class="treatment">
+      <h3>Lemon Bottle</h3>
+      <p>Enquire about treatment suitability.</p>
+      <a href="#prices">View prices →</a>
+    </article>
+    <article class="treatment">
+      <h3>Filler Dissolving</h3>
+      <p>Assessment and consultation required.</p>
+      <a href="#prices">View prices →</a>
+    </article>
+  </div>
+</section>
+
+<section id="prices" class="center" style="background:#f7eeeb">
+  <div class="eyebrow">The Aura Menu</div>
+  <h2>Treatment Prices</h2>
+  <p class="section-intro">
+    Prices are subject to consultation and suitability.
+  </p>
+  <div class="treatments">
+    <article class="treatment">
+      <h3>Consultation</h3>
+      <div class="price">£0</div>
+    </article>
+    <article class="treatment">
+      <h3>Signature Lips</h3>
+      <p>0.5 ml · £110</p>
+      <p>1 ml · £125</p>
+    </article>
+    <article class="treatment">
+      <h3>Russian Lips</h3>
+      <p>0.5 ml · £145</p>
+      <p>1 ml · £180</p>
+    </article>
+    <article class="treatment">
+      <h3>Anti-Wrinkle</h3>
+      <p>1 area · £155</p>
+      <p>2 areas · £195</p>
+      <p>3 areas · £235</p>
+      <small>Consultation required</small>
+    </article>
+    <article class="treatment">
+      <h3>Skin Booster</h3>
+      <p>B12 injection · £40</p>
+    </article>
+    <article class="treatment">
+      <h3>Lemon Bottle</h3>
+      <p>1 area · £95</p>
+      <p>2 areas · £115</p>
+      <p>3 areas · £135</p>
+    </article>
+    <article class="treatment">
+      <h3>Filler Dissolving</h3>
+      <div class="price">£135</div>
+    </article>
+  </div>
+</section>
+
+<section id="booking" class="center">
+  <div class="eyebrow">Your Aura Journey</div>
+  <h2>Request an Appointment</h2>
+  <p class="section-intro">
+    Send an appointment request and we'll be in touch
+    to discuss availability and your consultation.
+  </p>
+  <form id="bookingForm">
+    <label for="name">Full name</label>
+    <input id="name" name="name" required>
+
+    <label for="email">Email address</label>
+    <input id="email" name="email" type="email" required>
+
+    <label for="treatment">Treatment</label>
+    <select id="treatment" name="treatment" required>
+      <option value="">Choose a treatment</option>
+      <option>Lip Filler</option>
+      <option>Anti-Wrinkle</option>
+      <option>Skin Booster</option>
+      <option>Lemon Bottle</option>
+      <option>Filler Dissolving</option>
+      <option>Consultation</option>
+    </select>
+
+    <label for="date">Preferred date</label>
+    <input id="date" name="date" type="date">
+
+    <label for="message">Additional information</label>
+    <textarea id="message" name="message" rows="4"
+      placeholder="Please do not include medical information here."></textarea>
+
+    <p>
+      <small>This is a demo form. It does not submit or
+      store your appointment request.</small>
+    </p>
+    <button class="btn" type="submit">REQUEST APPOINTMENT</button>
+    <p id="formMessage" aria-live="polite"></p>
+  </form>
+</section>
+
+<section id="faq" class="center" style="background:#f7eeeb">
+  <div class="eyebrow">Good to Know</div>
+  <h2>Frequently Asked Questions</h2>
+  <div class="faq">
+    <details>
+      <summary>Do I need a consultation?</summary>
+      <p>Yes. A consultation helps establish your goals,
+      medical suitability and an appropriate treatment plan.</p>
+    </details>
+    <details>
+      <summary>How do I book?</summary>
+      <p>Use the appointment request form. Your booking
+      is not confirmed until you receive confirmation.</p>
+    </details>
+    <details>
+      <summary>Where are you based?</summary>
+      <p>Aura Aesthetics is based in Weymouth, Dorset.
+      Exact appointment details can be provided when booking.</p>
+    </details>
+    <details>
+      <summary>Can I buy a gift voucher?</summary>
+      <p>Gift vouchers can be requested using our contact
+      details. Terms and treatment suitability apply.</p>
+    </details>
+  </div>
+</section>
+
+<section class="center">
+  <div class="eyebrow">A Thoughtful Gift</div>
+  <h2>Give the Gift of Aura</h2>
+  <p class="section-intro">
+    Treat someone special to an Aura Aesthetics gift voucher.
+    Contact us to enquire about available amounts.
+  </p>
+  <a class="btn" href="#contact">ENQUIRE ABOUT VOUCHERS</a>
+</section>
+
+<section id="contact" class="center">
+  <div class="eyebrow">Get in Touch</div>
+  <h2>We'd Love to Hear From You</h2>
+  <p>Weymouth, Dorset</p>
+  <p>
+    Instagram:
+    <a href="https://www.instagram.com/aura_aesthetics_rn/"
+       target="_blank" rel="noopener">
+      @aura_aesthetics_rn
+    </a>
+  </p>
+  <p>Contact details to be added.</p>
+</section>
+</main>
+
+<footer>
+  <div class="logo">AURA</div>
+  <p>A E S T H E T I C S</p>
+  <p>By Nurse Carly · Weymouth, Dorset</p>
+  <small>All treatments are subject to consultation
+  and clinical suitability.</small>
+</footer>
+
+<script>
+document.getElementById("bookingForm").addEventListener(
+  "submit", function(event) {
+    event.preventDefault();
+    document.getElementById("formMessage").textContent =
+      "This demo form is not connected yet. Please contact Aura Aesthetics directly to arrange an appointment.";
+  }
+);
+</script>
+
+</body>
+</html>
